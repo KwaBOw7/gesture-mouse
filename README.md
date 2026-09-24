@@ -2,7 +2,6 @@
 
 Control your computer with hand gestures using only a webcam. GestureMouse tracks your hand with MediaPipe, classifies the gesture, and turns it into cursor movement, clicks, scrolling, copy/paste and browser shortcuts.
 
-<!-- Add a demo GIF here: ![Demo](docs/demo.gif) -->
 
 ## Features
 
@@ -29,7 +28,7 @@ Control your computer with hand gestures using only a webcam. GestureMouse track
 
 ## Requirements
 
-- Python 3.9–3.12
+- Python 3.11.9
 - A webcam
 - Internet access on first run (downloads the MediaPipe hand model, ~8 MB, once)
 
@@ -113,7 +112,3 @@ Commonly tuned settings:
 - **"Could not read camera frame":** another app is using the webcam, or the wrong camera is selected.
 - **Model download fails:** check your internet connection and run again; the file is saved to `models/hand_landmarker.task`.
 - **Jittery cursor or misfires:** improve lighting, keep your hand fully in frame, and raise `cursor.smoothing` or the gesture confirmation settings in the config.
-
-## License
-
-MIT (see `LICENSE`).
